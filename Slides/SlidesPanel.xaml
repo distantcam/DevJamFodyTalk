@@ -124,7 +124,7 @@
                     <RowDefinition Height="*" />
                 </Grid.RowDefinitions>
 
-                <TextBlock Grid.Row="0" Text="Fody is a post-compilation code weaver" />
+                <TextBlock Grid.Row="0" Text="Fody is a post-compilation code weaver" FontStyle="Italic" />
                 <TextBlock Grid.Row="1" />
 
                 <TextBlock Grid.Row="2" x:Name="slide2a" Opacity="0" Text="Code generation like:" />
@@ -142,6 +142,7 @@
             <TextBlock Text="TO TEH CODEZ" />
         </Border>
 
-        <TextBlock Text="Cameron MacFarland (@distantcam)" HorizontalAlignment="Right" VerticalAlignment="Bottom" Opacity="0.1" FontSize="24" />
+        <TextBlock Text="Cameron MacFarland (@distantcam)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Opacity="0.1" FontSize="36" />
+        <TextBlock Text="https://github.com/distantcam/DevJamFodyTalk" HorizontalAlignment="Right" VerticalAlignment="Bottom" Opacity="0.1" FontSize="36" />
     </Grid>
 </UserControl>
