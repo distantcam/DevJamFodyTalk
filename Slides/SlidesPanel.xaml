@@ -1,0 +1,147 @@
+﻿<UserControl x:Class="Slides.SlidesPanel"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:Slides"
+             mc:Ignorable="d"
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="72" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
+    </UserControl.Resources>
+
+    <Grid x:Name="slides">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="DarkSlateBlue" Offset="0" />
+                <GradientStop Color="Black" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.Resources>
+            <Style TargetType="Border">
+                <Setter Property="Opacity" Value="0" />
+                <Setter Property="HorizontalAlignment" Value="Center" />
+                <Setter Property="VerticalAlignment" Value="Center" />
+            </Style>
+        </Grid.Resources>
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="Common">
+                <VisualState x:Name="State1">
+                    <Storyboard>
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide1" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="State2">
+                    <Storyboard>
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="State3">
+                    <Storyboard>
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2a" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="State4">
+                    <Storyboard>
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2a" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2b" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="State5">
+                    <Storyboard>
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2a" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2b" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2c" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="State6">
+                    <Storyboard>
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2d" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="State7">
+                    <Storyboard>
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2d" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2e" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="State8">
+                    <Storyboard>
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2d" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2e" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2f" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="State9">
+                    <Storyboard>
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2d" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2e" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2f" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2g" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="StateEnd">
+                    <Storyboard>
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slideEnd" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+
+        <Border x:Name="slide1">
+            <TextBlock Text="What is Fody?" />
+        </Border>
+
+        <Border x:Name="slide2">
+            <Border.Resources>
+                <Style TargetType="TextBlock">
+                    <Setter Property="FontSize" Value="72" />
+                    <Setter Property="HorizontalAlignment" Value="Left" />
+                    <Setter Property="VerticalAlignment" Value="Center" />
+                </Style>
+            </Border.Resources>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" Text="Fody is a post-compilation code weaver" />
+                <TextBlock Grid.Row="1" />
+
+                <TextBlock Grid.Row="2" x:Name="slide2a" Opacity="0" Text="Code generation like:" />
+                <TextBlock Grid.Row="3" x:Name="slide2b" Opacity="0" Text="- Yield state machine" />
+                <TextBlock Grid.Row="4" x:Name="slide2c" Opacity="0" Text="- async state machine" />
+
+                <TextBlock Grid.Row="2" x:Name="slide2d" Opacity="0" Text="In the build process:" />
+                <TextBlock Grid.Row="3" x:Name="slide2e" Opacity="0" Text="- Decompile" />
+                <TextBlock Grid.Row="4" x:Name="slide2f" Opacity="0" Text="- Run Fody Weavers" />
+                <TextBlock Grid.Row="5" x:Name="slide2g" Opacity="0" Text="- Recompile" />
+            </Grid>
+        </Border>
+
+        <Border x:Name="slideEnd">
+            <TextBlock Text="TO TEH CODEZ" />
+        </Border>
+
+        <TextBlock Text="Cameron MacFarland (@distantcam)" HorizontalAlignment="Right" VerticalAlignment="Bottom" Opacity="0.1" FontSize="24" />
+    </Grid>
+</UserControl>
