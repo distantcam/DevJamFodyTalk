@@ -6,8 +6,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         Title="Slides"
         Width="525"
-        Height="350" Foreground="White"
+        Height="350"
+        Foreground="White"
         WindowState="Maximized"
+        WindowStyle="None"
         mc:Ignorable="d">
     <Grid>
         <local:SlidesPanel x:Name="slides" />
