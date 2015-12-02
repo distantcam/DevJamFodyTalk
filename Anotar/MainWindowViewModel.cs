@@ -1,19 +1,17 @@
 ﻿using Anotar.Custom;
-using PropertyChanged;
 
 namespace Anotar
 {
-    [ImplementPropertyChanged]
-    class MainWindowViewModel
+    class MainWindowViewModel : BaseViewModel
     {
         public string Greeting { get; set; }
 
         private void OnGreetingChanged()
         {
             LogTo.Information("Greeting changed: {0}", Greeting);
+            OnPropertyChanged(nameof(Output));
         }
 
-        [DependsOn(nameof(Greeting))]
         public string Output => LoggerFactory.LogOutput;
     }
 }
