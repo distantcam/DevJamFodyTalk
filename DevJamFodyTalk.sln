@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullGuard", "NullGuard\Null
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Number07", "Number07", "{A48814CC-BA54-4A8B-89DD-AB19E89A781B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Links", "Links\Links.csproj", "{B18F262C-B60D-4270-A719-2A41F00C67CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +73,10 @@ Global
 		{2EAB0C7C-0A6C-47DC-B3BE-B812EF57B9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EAB0C7C-0A6C-47DC-B3BE-B812EF57B9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EAB0C7C-0A6C-47DC-B3BE-B812EF57B9E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B18F262C-B60D-4270-A719-2A41F00C67CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18F262C-B60D-4270-A719-2A41F00C67CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18F262C-B60D-4270-A719-2A41F00C67CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18F262C-B60D-4270-A719-2A41F00C67CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

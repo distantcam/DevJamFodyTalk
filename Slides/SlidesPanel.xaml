@@ -69,20 +69,21 @@
                 <VisualState x:Name="State6">
                     <Storyboard>
                         <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2a" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2b" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2c" Storyboard.TargetProperty="(UIElement.Opacity)" />
                         <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2d" Storyboard.TargetProperty="(UIElement.Opacity)" />
                     </Storyboard>
                 </VisualState>
                 <VisualState x:Name="State7">
                     <Storyboard>
                         <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
-                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2d" Storyboard.TargetProperty="(UIElement.Opacity)" />
                         <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2e" Storyboard.TargetProperty="(UIElement.Opacity)" />
                     </Storyboard>
                 </VisualState>
                 <VisualState x:Name="State8">
                     <Storyboard>
                         <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
-                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2d" Storyboard.TargetProperty="(UIElement.Opacity)" />
                         <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2e" Storyboard.TargetProperty="(UIElement.Opacity)" />
                         <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2f" Storyboard.TargetProperty="(UIElement.Opacity)" />
                     </Storyboard>
@@ -90,10 +91,18 @@
                 <VisualState x:Name="State9">
                     <Storyboard>
                         <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
-                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2d" Storyboard.TargetProperty="(UIElement.Opacity)" />
                         <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2e" Storyboard.TargetProperty="(UIElement.Opacity)" />
                         <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2f" Storyboard.TargetProperty="(UIElement.Opacity)" />
                         <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2g" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="State10">
+                    <Storyboard>
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2e" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2f" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2g" Storyboard.TargetProperty="(UIElement.Opacity)" />
+                        <DoubleAnimation To="1" Duration="0:00:00.2" Storyboard.TargetName="slide2h" Storyboard.TargetProperty="(UIElement.Opacity)" />
                     </Storyboard>
                 </VisualState>
                 <VisualState x:Name="StateEnd">
@@ -129,15 +138,17 @@
 
                 <TextBlock Grid.Row="0" Text="Fody is a post-compilation code weaver" FontStyle="Italic" />
                 <TextBlock Grid.Row="1" />
+                <TextBlock Grid.Row="2" />
 
-                <TextBlock Grid.Row="2" x:Name="slide2a" Opacity="0" Text="Code generation like:" />
-                <TextBlock Grid.Row="3" x:Name="slide2b" Opacity="0" Text="- Yield state machine" />
-                <TextBlock Grid.Row="4" x:Name="slide2c" Opacity="0" Text="- async state machine" />
+                <TextBlock Grid.Row="1" x:Name="slide2a" Opacity="0" Text="Aspect Oriented Programming (AOP)" />
+                <TextBlock Grid.Row="3" x:Name="slide2b" Opacity="0" Text="Code generation like:" />
+                <TextBlock Grid.Row="4" x:Name="slide2c" Opacity="0" Text="- Yield state machine" />
+                <TextBlock Grid.Row="5" x:Name="slide2d" Opacity="0" Text="- async state machine" />
 
-                <TextBlock Grid.Row="2" x:Name="slide2d" Opacity="0" Text="In the build process:" />
-                <TextBlock Grid.Row="3" x:Name="slide2e" Opacity="0" Text="- Decompile" />
-                <TextBlock Grid.Row="4" x:Name="slide2f" Opacity="0" Text="- Run Fody Weavers" />
-                <TextBlock Grid.Row="5" x:Name="slide2g" Opacity="0" Text="- Recompile" />
+                <TextBlock Grid.Row="2" x:Name="slide2e" Opacity="0" Text="In the build process:" />
+                <TextBlock Grid.Row="3" x:Name="slide2f" Opacity="0" Text="- Decompile (with Mono Cecil)" />
+                <TextBlock Grid.Row="4" x:Name="slide2g" Opacity="0" Text="- Run Fody Weavers" />
+                <TextBlock Grid.Row="5" x:Name="slide2h" Opacity="0" Text="- Recompile" />
             </Grid>
         </Border>
 
@@ -145,6 +156,7 @@
             <TextBlock Text="TO TEH CODEZ" />
         </Border>
 
+        <TextBlock Text="PerthDotNet DevJam 2015" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Opacity="0.5" FontSize="36" />
         <TextBlock Text="Cameron MacFarland (@distantcam)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Opacity="{StaticResource FooterOpacity}" FontSize="36" />
         <TextBlock Text="https://github.com/distantcam/DevJamFodyTalk" HorizontalAlignment="Right" VerticalAlignment="Bottom" Opacity="{StaticResource FooterOpacity}" FontSize="36" />
     </Grid>
